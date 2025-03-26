@@ -61,7 +61,7 @@ export default function Home() {
             />
           </section>
 
-          <section className="mb-20 flex justify-between">
+          <section className="mb-20 sm:flex justify-between">
             <div>
               <h2 className="text-2xl font-semibold text-purple-300 mb-4">
                 Experience
@@ -84,7 +84,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div>
+            <div className="sm:pt-0 pt-20">
               <h2 className="text-2xl font-semibold text-purple-300 mb-4">
                 Education
               </h2>

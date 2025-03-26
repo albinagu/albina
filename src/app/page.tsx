@@ -15,7 +15,10 @@ export default function Home() {
       </Head>
       <main>
         <div className="hidden md:block">
-          <svg className="absolute top-0 left-0 w-full" viewBox="0 0 1440 120">
+          <svg
+            className="absolute top-0 left-0 w-full blur-xs"
+            viewBox="0 0 1440 120"
+          >
             <defs>
               <linearGradient
                 id="gradientWave"
@@ -41,60 +44,63 @@ export default function Home() {
           </svg>
         </div>
 
-        <div className="max-w-4xl mx-auto p-6 sm:pt-35 pt-10">
-          <header className="text-center mb-8">
-            <h1 className="text-4xl font-extrabold text-purple-300">
+        <div className="max-w-6xl mx-auto p-6 sm:pt-35 pt-10">
+          <header className="mb-8">
+            <h1 className="text-5xl text-center font-extrabold text-purple-300">
               Albina Guseynova
             </h1>
-            <p className="text-xl">Web Developer</p>
           </header>
 
-          <section className="text-center mb-10">
+          <section className="mb-30">
             <Image
               src={staff}
               alt="albina"
-              className="w-50 h-50 rounded-full mx-auto mb-4 object-cover transition-transform duration-700 ease-in-out transform hover:rotate-360"
+              className="w-40 h-45 rounded-lg mx-auto mb-4 object-cover transition-transform duration-700 ease-in-out transform hover:rotate-360"
               width={200}
               height={200}
             />
           </section>
 
-          <section className="mb-10">
-            <h2 className="text-2xl font-semibold text-purple-300 mb-4">
-              Experience
-            </h2>
-            <div className="space-y-4">
-              <div className="p-4 pt-0 rounded-md">
-                <h3 className="font-bold">Front-End Developer - Júní</h3>
-                <p className="text-sm text-gray-500">February 2019 - Present</p>
+          <section className="mb-20 flex justify-between">
+            <div>
+              <h2 className="text-2xl font-semibold text-purple-300 mb-4">
+                Experience
+              </h2>
+              <div className="space-y-4">
+                <div className="p-4 pt-0 rounded-md">
+                  <h3 className="font-bold">Web Developer - Júní</h3>
+                  <p className="text-sm text-gray-500">
+                    February 2019 - Present
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="p-4 pt-0 rounded-md">
+                  <h3 className="font-bold">
+                    Software Developer - Novomatic Lottery Solutions
+                  </h3>
+                  <p className="text-sm text-gray-500">May 2017 - Jan 2019</p>
+                </div>
               </div>
             </div>
-            <div className="space-y-4">
-              <div className="p-4 pt-0 rounded-md">
-                <h3 className="font-bold">
-                  Software Developer - Novomatic Lottery Solutions
-                </h3>
-                <p className="text-sm text-gray-500">May 2017 - Jan 2019</p>
-              </div>
-            </div>
-          </section>
 
-          <section className="mb-10">
-            <h2 className="text-2xl font-semibold text-purple-300 mb-4">
-              Education
-            </h2>
-            <div className="space-y-4">
-              <div className="p-4 pt-0 rounded-md">
-                <h3 className="font-bold">
-                  Reykjavík University - Bachelor of Science (B.Sc.)
-                </h3>
-                <p className="text-sm text-gray-500">2014 - 2017</p>
+            <div>
+              <h2 className="text-2xl font-semibold text-purple-300 mb-4">
+                Education
+              </h2>
+              <div className="space-y-4">
+                <div className="p-4 pt-0 rounded-md">
+                  <h3 className="font-bold">
+                    Reykjavík University - Bachelor of Science (B.Sc.)
+                  </h3>
+                  <p className="text-sm text-gray-500">2014 - 2017</p>
+                </div>
               </div>
-            </div>
-            <div className="space-y-4">
-              <div className="p-4 pt-0 rounded-md">
-                <h3 className="font-bold">International Baccalaureate</h3>
-                <p className="text-sm text-gray-500">2010 - 2014</p>
+              <div className="space-y-4">
+                <div className="p-4 pt-0 rounded-md">
+                  <h3 className="font-bold">International Baccalaureate</h3>
+                  <p className="text-sm text-gray-500">2010 - 2014</p>
+                </div>
               </div>
             </div>
           </section>

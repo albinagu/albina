@@ -7,16 +7,10 @@ export default function Home() {
     <>
       <Head>
         <title>Albina</title>
-        <meta
-          name="description"
-          content="Check out my tiny cv!"
-        />
+        <meta name="description" content="Check out my tiny cv!" />
 
         <meta property="og:title" content="Albina" />
-        <meta
-          property="og:description"
-          content="Check out my tiny cv!"
-        />
+        <meta property="og:description" content="Check out my tiny cv!" />
         <meta property="og:type" content="website" />
       </Head>
       <main>

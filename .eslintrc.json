@@ -1,4 +1,7 @@
 {
   "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
-  "plugins": ["prettier"]
+  "plugins": ["prettier"],
+  "rules": {
+    "semi": ["error", "never"]  // Disable semicolons (automatic semicolon insertion)
+  }
 }

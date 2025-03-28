@@ -21,7 +21,7 @@ export default function Projects() {
           {projects.slice(0, 6).map((project, index) => (
             <div key={index} className="border-1 rounded-xl p-5 bg-gray-950">
               <div className="text-purple-300 font-semibold">{index + 1}</div>
-              <div className="flex justify-self-center">
+              <div className="flex justify-center">
                 <Image src={project.image} alt="island" width={120} />
               </div>
               <p className="sm:text-lg font-semi-bold">{project.name}</p>
@@ -43,7 +43,7 @@ export default function Projects() {
                   <div className="text-purple-300 font-semibold">
                     {6 + index + 1}
                   </div>
-                  <div className="flex justify-self-center">
+                  <div className="flex justify-center">
                     <Image src={project.image} alt="island" width={120} />
                   </div>
                   <p className="sm:text-lg font-semi-bold">{project.name}</p>

@@ -1,7 +1,11 @@
 {
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
   "plugins": ["prettier"],
   "rules": {
-    "semi": ["error", "never"]  // Disable semicolons (automatic semicolon insertion)
+    "semi": ["error", "never"]
   }
 }

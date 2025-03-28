@@ -1,47 +1,92 @@
-import Image from "next/image";
-import island from "../assets/island.svg";
+import Image from "next/image"
+import { projects } from "../utils"
+import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
 
 export default function Projects() {
+  const [showAll, setShowAll] = useState(false)
+  const handleToggle = () => {
+    setShowAll((prev) => !prev)
+  }
+
   return (
-    <section className="mb-20">
-      <h2 className="text-2xl font-semibold text-purple-300 mb-4">Projects</h2>
-      <div className="grid grid-cols-2 gap-6">
-        <div className="rounded-lg overflow-hidden group transform transition-all duration-200 hover:scale-102">
-          <Image src={island} alt="island" />
-          <p>Frontpage - Life Events</p>
+    <section className="flex flex-col gap-20 sm:mt-0 mt-20">
+      <div>
+        <h2 className="text-2xl font-semibold text-purple-300">
+          Recent projects
+        </h2>
+        <p className="text-sm text-gray-500 mb-5">Digital Iceland</p>
+        <div className="grid sm:grid-cols-3 grid-cols-1 gap-7">
+          {/* initial 6 items */}
+          {projects.slice(0, 6).map((project, index) => (
+            <div key={index} className="border-1 rounded-xl p-5 bg-gray-950">
+              <div className="text-purple-300 font-semibold">{index + 1}</div>
+              <div className="rounded-lg overflow-hidden">
+                <Image
+                  src={project.image}
+                  alt="island"
+                  width={120}
+                  className="flex justify-self-center"
+                />
+              </div>
+              <p className="text-lg font-semi-bold">{project.name}</p>
+            </div>
+          ))}
         </div>
-        <div className="rounded-lg overflow-hidden group transform transition-all duration-200 hover:scale-102">
-          <Image src={island} alt="island" />
-          <p>Application for Passport</p>
-        </div>
-        <div className="rounded-lg overflow-hidden group transform transition-all duration-200 hover:scale-102">
-          <Image src={island} alt="island" />
-          <p>Application for Marriage</p>
-        </div>
-        <div className="rounded-lg overflow-hidden group transform transition-all duration-200 hover:scale-102">
-          <Image src={island} alt="island" />
-          <p>Application for Drivers license</p>
-        </div>
-        <div className="rounded-lg overflow-hidden group transform transition-all duration-200 hover:scale-102">
-          <Image src={island} alt="island" />
-          <p>Application for P-card</p>
-        </div>
-        <div className="rounded-lg overflow-hidden group transform transition-all duration-200 hover:scale-102">
-          <Image src={island} alt="island" />
-          <p>Application for Estate settlement</p>
-        </div>
-        <div className="rounded-lg overflow-hidden group transform transition-all duration-200 hover:scale-102">
-          <Image src={island} alt="island" />
-          <p>Application for Inheritance financial statement</p>
-        </div>
-        <div className="rounded-lg overflow-hidden group transform transition-all duration-200 hover:scale-102">
-          <Image src={island} alt="island" />
-          <p>
-            Signature Collection System used in presidential and parliamentary
-            elections
-          </p>
+        <AnimatePresence>
+          {/* the rest of the items */}
+          {showAll && (
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.5 }}
+              className="grid sm:grid-cols-3 grid-cols-1 gap-7 pt-5"
+            >
+              {projects.slice(6).map((project, index) => (
+                <div key={6 + index} className="border-1 rounded-lg p-5">
+                  <div className="text-purple-300 font-semibold">
+                    {6 + index + 1}
+                  </div>
+                  <div className="rounded-lg overflow-hidden">
+                    <Image
+                      src={project.image}
+                      alt="island"
+                      width={120}
+                      className="flex justify-self-center"
+                    />
+                  </div>
+                  <p className="text-lg font-semi-bold">{project.name}</p>
+                </div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <div className="flex justify-center">
+          <button
+            onClick={handleToggle}
+            className="mt-10 text-purple-300 hover:text-purple-500 transition-colors"
+          >
+            {showAll ? "See Less" : "See More"}
+          </button>
         </div>
       </div>
+      <div>
+        <h2 className="text-2xl font-semibold text-purple-300">
+          Other projects
+        </h2>
+        <p className="text-sm text-gray-500 mb-5">Kosmos&Kaos and Novomatic</p>
+        <p className="text-lg">
+          My previous projects @Júní include various frontend work for different
+          clients, such as Kringlan (building both their website and app),
+          Herjólfur, Aðaltorg, Alþingi and others.
+        </p>
+        <p className="text-lg pt-5">
+          My projects @Novomatic included various frontend / fullstack work for
+          implementing solutions used to service lottery games and
+          administration around it.
+        </p>
+      </div>
     </section>
-  );
+  )
 }

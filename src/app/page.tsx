@@ -1,37 +1,53 @@
-import Experience from "./components/experience";
-import Education from "./components/education";
-import Skills from "./components/skills";
-import NameAndTitle from "./components/nameAndTitle";
-import Footer from "./components/footer";
-import TopPageDecoration from "./components/topPageDecoration";
-import AboutMe from "./components/aboutMe";
-import Languages from "./components/languages";
-import Projects from "./components/projects";
+"use client"
+import Experience from "./components/experience"
+import Education from "./components/education"
+import Skills from "./components/skills"
+import NameAndTitle from "./components/nameAndTitle"
+import Footer from "./components/footer"
+import Decoration from "./components/decoration"
+import AboutMe from "./components/aboutMe"
+import Languages from "./components/languages"
+import Projects from "./components/projects"
+import { motion } from "framer-motion"
 
 export default function Home() {
   return (
-    <>
-      <main>
-        <TopPageDecoration />
-        <div className="container mx-auto px-4">
-          <div className="grid sm:grid-cols-2 gap-10 pt-20 sm:pt-55">
-            <NameAndTitle />
+    <div>
+      <motion.div
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 1,
+          ease: "easeOut",
+        }}
+      >
+        <Decoration />
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+        className="container mx-auto px-4"
+      >
+        <div className="grid sm:grid-cols-3 grid-cols-1 gap-20 mb-20 sm:pt-20 pt-10">
+          <NameAndTitle />
+          <div className="sm:col-span-2">
             <AboutMe />
           </div>
-          <div className="grid sm:grid-cols-2 gap-10">
-            <div>
-              <Experience />
-              <Education />
-              <Languages />
-              <Skills />
-            </div>
-            <div>
-              <Projects />
-            </div>
+        </div>
+        <div className="sm:grid sm:grid-cols-3 gap-20">
+          <div className="flex flex-col gap-20">
+            <Experience />
+            <Education />
+            <Languages />
+          </div>
+          <div className="col-span-2 flex flex-col gap-20">
+            <Projects />
+            <Skills />
           </div>
         </div>
-      </main>
+      </motion.div>
       <Footer />
-    </>
-  );
+    </div>
+  )
 }

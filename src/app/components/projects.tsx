@@ -6,11 +6,11 @@ import { motion, AnimatePresence } from "framer-motion"
 export default function Projects() {
   const [showAll, setShowAll] = useState(false)
   const handleToggle = () => {
-    setShowAll((prev) => !prev)
+    setShowAll(!showAll)
   }
 
   return (
-    <section className="flex flex-col gap-20 sm:mt-0 mt-20">
+    <section className="flex flex-col sm:gap-20 gap-12 sm:mt-0 mt-12">
       <div>
         <h2 className="text-2xl font-semibold text-purple-300">
           Recent projects
@@ -21,15 +21,10 @@ export default function Projects() {
           {projects.slice(0, 6).map((project, index) => (
             <div key={index} className="border-1 rounded-xl p-5 bg-gray-950">
               <div className="text-purple-300 font-semibold">{index + 1}</div>
-              <div className="rounded-lg overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt="island"
-                  width={120}
-                  className="flex justify-self-center"
-                />
+              <div className="flex justify-self-center">
+                <Image src={project.image} alt="island" width={120} />
               </div>
-              <p className="text-lg font-semi-bold">{project.name}</p>
+              <p className="sm:text-lg font-semi-bold">{project.name}</p>
             </div>
           ))}
         </div>
@@ -48,15 +43,10 @@ export default function Projects() {
                   <div className="text-purple-300 font-semibold">
                     {6 + index + 1}
                   </div>
-                  <div className="rounded-lg overflow-hidden">
-                    <Image
-                      src={project.image}
-                      alt="island"
-                      width={120}
-                      className="flex justify-self-center"
-                    />
+                  <div className="flex justify-self-center">
+                    <Image src={project.image} alt="island" width={120} />
                   </div>
-                  <p className="text-lg font-semi-bold">{project.name}</p>
+                  <p className="sm:text-lg font-semi-bold">{project.name}</p>
                 </div>
               ))}
             </motion.div>
@@ -65,9 +55,9 @@ export default function Projects() {
         <div className="flex justify-center">
           <button
             onClick={handleToggle}
-            className="mt-10 text-purple-300 hover:text-purple-500 transition-colors"
+            className="sm:mt-10 mt-5 text-purple-300 hover:text-purple-500 transition-colors"
           >
-            {showAll ? "See Less" : "See More"}
+            {showAll ? "See less" : "See more"}
           </button>
         </div>
       </div>
@@ -76,12 +66,12 @@ export default function Projects() {
           Other projects
         </h2>
         <p className="text-sm text-gray-500 mb-5">Kosmos&Kaos and Novomatic</p>
-        <p className="text-lg">
+        <p className="sm:text-lg">
           My previous projects @Júní include various frontend work for different
           clients, such as Kringlan (building both their website and app),
           Herjólfur, Aðaltorg, Alþingi and others.
         </p>
-        <p className="text-lg pt-5">
+        <p className="sm:text-lg pt-5">
           My projects @Novomatic included various frontend / fullstack work for
           implementing solutions used to service lottery games and
           administration around it.

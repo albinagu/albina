@@ -16,11 +16,11 @@ export default function Projects() {
           Recent projects
         </h2>
         <p className="text-sm text-gray-500 mb-5">Digital Iceland</p>
-        <div className="grid sm:grid-cols-3 grid-cols-1 gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
           {/* initial 6 items */}
           {projects.slice(0, 6).map((project, index) => (
             <div key={index} className="border-1 rounded-xl p-5 bg-gray-950">
-              <div className="text-purple-300 font-semibold">{index + 1}</div>
+              <div className="text-lg text-purple-300 font-semibold">{index + 1}</div>
               <div className="flex justify-center">
                 <Image src={project.image} alt="island" width={120} />
               </div>
@@ -36,11 +36,11 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.5 }}
-              className="grid sm:grid-cols-3 grid-cols-1 gap-7 pt-5"
+              className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 pt-5"
             >
               {projects.slice(6).map((project, index) => (
                 <div key={6 + index} className="border-1 rounded-lg p-5">
-                  <div className="text-purple-300 font-semibold">
+                  <div className="text-lg text-purple-300 font-semibold">
                     {6 + index + 1}
                   </div>
                   <div className="flex justify-center">
@@ -65,9 +65,9 @@ export default function Projects() {
         <h2 className="text-2xl font-semibold text-purple-300">
           Other projects
         </h2>
-        <p className="text-sm text-gray-500 mb-5">Kosmos&Kaos and Novomatic</p>
+        <p className="text-sm text-gray-500 mb-5">Kosmos & Kaos and Novomatic</p>
         <p className="sm:text-lg">
-          My previous projects @Júní include various frontend work for different
+          My previous projects @Kosmos & Kaos include various frontend work for different
           clients, such as Kringlan (building both their website and app),
           Herjólfur, Aðaltorg, Alþingi and others.
         </p>

@@ -6,7 +6,7 @@ export default function Experience() {
       </h2>
       <div className="p-4 pt-0 rounded-md">
         <h3 className="font-bold">
-          Web Developer <br />- Kosmos&Kaos / Júní
+          Web Developer <br />- Kosmos & Kaos / Júní
         </h3>
         <p className="text-sm text-gray-500">February 2019 - Present</p>
       </div>

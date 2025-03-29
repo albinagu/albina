@@ -9,6 +9,7 @@ import AboutMe from "./components/aboutMe"
 import Languages from "./components/languages"
 import Projects from "./components/projects"
 import { motion } from "framer-motion"
+import Gallery from "./components/gallery"
 
 export default function Home() {
   return (
@@ -44,6 +45,7 @@ export default function Home() {
           <div className="col-span-2 flex flex-col sm:gap-20 gap-12">
             <Projects />
             <Skills />
+            <Gallery />
           </div>
         </div>
       </motion.div>

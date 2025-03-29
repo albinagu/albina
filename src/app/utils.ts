@@ -1,8 +1,8 @@
-import jobs from "./assets/jobs.svg"
-import paper from "./assets/paper.svg"
-import school from "./assets/school.svg"
-import phone from "./assets/phone.svg"
-import services from "./assets/services.svg"
+import jobs from "./assets/projects/jobs.svg"
+import paper from "./assets/projects/paper.svg"
+import school from "./assets/projects/school.svg"
+import phone from "./assets/projects/phone.svg"
+import services from "./assets/projects/services.svg"
 
 export const projects = [
   {

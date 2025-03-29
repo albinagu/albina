@@ -4,7 +4,7 @@ export default function Education() {
       <h2 className="text-2xl font-semibold text-purple-300 mb-4">Education</h2>
       <div className="p-4 pt-0">
         <h3 className="font-bold">
-          Reykjavík University <br />- B. Sc. in Computer Science
+          Computer Science (B. Sc.) <br />- Reykjavík University
         </h3>
         <p className="text-sm text-gray-500">2014 - 2017</p>
       </div>

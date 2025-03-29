@@ -1,4 +1,5 @@
 import { skills } from "../utils"
+import { FaRegLightbulb } from "react-icons/fa"
 
 export default function Skills() {
   return (
@@ -9,7 +10,10 @@ export default function Skills() {
       <ul className="text-white grid sm:grid-cols-3 grid-cols-2 sm:text-lg">
         {skills.map((skill, index) => (
           <li key={index} className="pb-2">
-            {skill}
+            <div className="flex items-center">
+              <FaRegLightbulb className="text-xs text-yellow-200 mr-1" />
+              {skill}
+            </div>
           </li>
         ))}
       </ul>

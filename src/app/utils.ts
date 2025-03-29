@@ -43,6 +43,7 @@ export const skills = [
   "Next.js",
   "Storybooks",
   "Git",
+  "Netlify",
   "UI / UX",
   "React Native",
   "Agile Methodologies",

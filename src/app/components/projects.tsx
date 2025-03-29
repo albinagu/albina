@@ -20,8 +20,11 @@ export default function Projects() {
           {/* initial 6 items */}
           {projects.slice(0, 6).map((project, index) => (
             <div key={index} className="border-1 rounded-xl p-5 bg-gray-950">
-              <div className="text-lg text-purple-300 font-semibold">{index + 1}</div>
-              <div className="flex justify-center">
+              <div className="flex justify-between">
+                <div className="text-4xl text-purple-300 font-semibold">
+                  {index + 1}
+                </div>
+
                 <Image src={project.image} alt="island" width={120} />
               </div>
               <p className="sm:text-lg font-semi-bold">{project.name}</p>
@@ -40,10 +43,11 @@ export default function Projects() {
             >
               {projects.slice(6).map((project, index) => (
                 <div key={6 + index} className="border-1 rounded-lg p-5">
-                  <div className="text-lg text-purple-300 font-semibold">
-                    {6 + index + 1}
-                  </div>
-                  <div className="flex justify-center">
+                  <div className="flex justify-between">
+                    <div className="text-4xl text-purple-300 font-semibold">
+                      {6 + index + 1}
+                    </div>
+
                     <Image src={project.image} alt="island" width={120} />
                   </div>
                   <p className="sm:text-lg font-semi-bold">{project.name}</p>
@@ -65,11 +69,13 @@ export default function Projects() {
         <h2 className="text-2xl font-semibold text-purple-300">
           Other projects
         </h2>
-        <p className="text-sm text-gray-500 mb-5">Kosmos & Kaos and Novomatic</p>
+        <p className="text-sm text-gray-500 mb-5">
+          Kosmos & Kaos and Novomatic
+        </p>
         <p className="sm:text-lg">
-          My previous projects @Kosmos & Kaos include various frontend work for different
-          clients, such as Kringlan (building both their website and app),
-          Herjólfur, Aðaltorg, Alþingi and others.
+          My previous projects @Kosmos & Kaos include various frontend work for
+          different clients, such as Kringlan (building both their website and
+          app), Herjólfur, Aðaltorg, Alþingi and others.
         </p>
         <p className="sm:text-lg pt-5">
           My projects @Novomatic included various frontend / fullstack work for

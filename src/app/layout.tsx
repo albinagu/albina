@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description: "Web developer's portfolio page",
     images: [
       {
-        url: "./assets/personal/photo3.png",
+        url: "https://albeans.netlify.app/assets/personal/photo3.png",
         width: 200,
         alt: "my image",
       },

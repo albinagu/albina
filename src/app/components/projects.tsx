@@ -2,6 +2,7 @@ import Image from "next/image"
 import { projects } from "../utils"
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
+import { MdAlternateEmail } from "react-icons/md"
 
 export default function Projects() {
   const [showAll, setShowAll] = useState(false)
@@ -73,14 +74,17 @@ export default function Projects() {
           Kosmos & Kaos and Novomatic
         </p>
         <p className="sm:text-lg">
-          My previous projects @Kosmos & Kaos include various frontend work for
-          different clients, such as Kringlan (building both their website and
-          app), Herjólfur, Aðaltorg, Alþingi and others.
+          My previous projects{" "}
+          <MdAlternateEmail className="inline-block text-sm text-yellow-200" />
+          Kosmos & Kaos include various frontend work for different clients,
+          such as Kringlan (building both their website and app), Herjólfur,
+          Aðaltorg, Alþingi and others.
         </p>
         <p className="sm:text-lg pt-5">
-          My projects @Novomatic included various frontend / fullstack work for
-          implementing solutions used to service lottery games and
-          administration around it.
+          My projects{" "}
+          <MdAlternateEmail className="inline-block text-sm text-yellow-200" />
+          Novomatic included various frontend / fullstack work for implementing
+          solutions used to service lottery games and administration around it.
         </p>
       </div>
     </section>

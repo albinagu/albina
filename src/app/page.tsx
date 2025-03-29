@@ -30,7 +30,7 @@ export default function Home() {
         transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
         className="container mx-auto px-4"
       >
-        <div className="grid sm:grid-cols-3 grid-cols-1 gap-15 sm:mb-30 mb-15 sm:pt-30 pt-10">
+        <div className="grid sm:grid-cols-3 grid-cols-1 gap-15 sm:mb-30 mb-15 sm:pt-20 pt-5">
           <NameAndTitle />
           <div className="sm:col-span-2">
             <AboutMe />

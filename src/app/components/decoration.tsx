@@ -2,7 +2,7 @@ export default function Decoration() {
   return (
     <svg className="top-0 left-0 w-full" viewBox="0 0 1440 120"
       preserveAspectRatio="none"
-      style={{ height: "auto", minHeight: "80px" }}
+      style={{ height: "auto", minHeight: "120px" }}
     >
       <defs>
         <linearGradient id="gradientWave" x1="0%" y1="0%" x2="100%" y2="100%">

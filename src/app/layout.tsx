@@ -10,6 +10,16 @@ const grotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "Albina",
   description: "",
+  openGraph: {
+    title: "Albina",
+    images: [
+      {
+        url: "./assets/personal/photo3.png",
+        width: 200,
+        alt: "my image",
+      },
+    ],
+  },
 }
 
 export default function RootLayout({

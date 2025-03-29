@@ -9,10 +9,7 @@ export default function Gallery() {
 
   return (
     <section>
-      <h2 className="text-2xl font-semibold text-purple-300 mb-5">
-        My gallery
-      </h2>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:mt-70 mt-40">
         {photos.map((photo, index) => {
           return (
             <div

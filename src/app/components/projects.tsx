@@ -11,7 +11,7 @@ export default function Projects() {
   }
 
   return (
-    <section className="flex flex-col sm:gap-20 gap-12 sm:mt-0 mt-12">
+    <section className="flex flex-col sm:gap-30 gap-15 sm:mt-0 mt-15">
       <div>
         <h2 className="text-2xl font-semibold text-purple-300">
           Recent projects
@@ -75,14 +75,14 @@ export default function Projects() {
         </p>
         <p className="sm:text-lg">
           My previous projects{" "}
-          <MdAlternateEmail className="inline-block text-sm text-yellow-200" />
+          <MdAlternateEmail className="inline-block text-xs text-white" />
           Kosmos & Kaos include various frontend work for different clients,
           such as Kringlan (building both their website and app), Herjólfur,
           Aðaltorg, Alþingi and others.
         </p>
         <p className="sm:text-lg pt-5">
           My projects{" "}
-          <MdAlternateEmail className="inline-block text-sm text-yellow-200" />
+          <MdAlternateEmail className="inline-block text-xs text-white" />
           Novomatic included various frontend / fullstack work for implementing
           solutions used to service lottery games and administration around it.
         </p>

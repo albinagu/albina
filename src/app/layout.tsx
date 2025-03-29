@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   description: "",
   openGraph: {
     title: "Albina",
+    description: "Web developer's portfolio page",
     images: [
       {
         url: "./assets/personal/photo3.png",

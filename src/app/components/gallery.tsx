@@ -9,13 +9,16 @@ export default function Gallery() {
 
   return (
     <section>
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:mt-70 mt-40">
+      <h2 className="text-2xl font-semibold text-purple-700 dark:text-purple-300">
+        Gallery
+      </h2>
+      <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">
+        Just for fun
+      </p>
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5">
         {photos.map((photo, index) => {
           return (
-            <div
-              key={index}
-              className="border-1 rounded-xl overflow-hidden"
-            >
+            <div key={index} className="border border-gray-400 rounded-lg overflow-hidden">
               <Image
                 src={photo}
                 className="w-full h-full object-cover object-center"

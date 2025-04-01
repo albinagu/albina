@@ -16,7 +16,7 @@ export default function Decoration() {
           x2="100%"
           y2="100%"
           animate={{
-            x1: ["0%", "20%", "0%"],
+            x1: ["0%", "30%", "0%"],
             x2: ["100%", "150%", "100%"],
             stopColor: ["#3C2570", "#A78BFA"],
           }}

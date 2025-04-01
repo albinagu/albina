@@ -22,7 +22,7 @@ export default function Projects() {
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
           {/* initial 6 items */}
           {projects.slice(0, 6).map((project, index) => (
-            <div key={index} className="border-1 rounded-xl p-5">
+            <div key={index} className="border border-gray-400 rounded-lg p-5">
               <div className="flex justify-between">
                 <div className="text-3xl text-purple-700 dark:text-purple-300 font-semibold">
                   {index + 1}
@@ -62,7 +62,7 @@ export default function Projects() {
         <div className="flex justify-center">
           <button
             onClick={handleToggle}
-            className="sm:mt-10 mt-5 text-purple-700 dark:text-purple-300 hover:text-purple-400 transition-colors"
+            className="sm:mt-10 mt-5 text-purple-700 dark:text-purple-300 hover:text-purple-400 transition-colors cursor-pointer"
           >
             {showAll ? "See less" : "See more"}
           </button>

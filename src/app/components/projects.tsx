@@ -16,11 +16,11 @@ export default function Projects() {
         <h2 className="text-2xl font-semibold text-purple-300">
           Recent projects
         </h2>
-        <p className="text-sm text-gray-500 mb-5">Digital Iceland</p>
+        <p className="text-sm text-gray-400 mb-5">Digital Iceland</p>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7">
           {/* initial 6 items */}
           {projects.slice(0, 6).map((project, index) => (
-            <div key={index} className="border-1 rounded-xl p-5 bg-gray-950">
+            <div key={index} className="border-1 rounded-xl p-5">
               <div className="flex justify-between">
                 <div className="text-4xl text-purple-300 font-semibold">
                   {index + 1}
@@ -60,7 +60,7 @@ export default function Projects() {
         <div className="flex justify-center">
           <button
             onClick={handleToggle}
-            className="sm:mt-10 mt-5 text-purple-300 hover:text-purple-500 transition-colors"
+            className="sm:mt-10 mt-5 text-purple-300 hover:text-purple-400 transition-colors"
           >
             {showAll ? "See less" : "See more"}
           </button>
@@ -70,7 +70,7 @@ export default function Projects() {
         <h2 className="text-2xl font-semibold text-purple-300">
           Other projects
         </h2>
-        <p className="text-sm text-gray-500 mb-5">
+        <p className="text-sm text-gray-400 mb-5">
           Kosmos & Kaos and Novomatic
         </p>
         <p className="sm:text-lg">

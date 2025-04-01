@@ -28,7 +28,7 @@ export default function Footer() {
               key={index}
               href={url}
               target="_blank"
-              className="mr-3 p-2 rounded-full bg-gray-950 text-purple-300 border-1 hover:bg-gray-200 hover:text-purple-500 transition-all"
+              className="mr-3 p-2 rounded-full text-purple-300 border-1 hover:bg-gray-200 hover:text-purple-400 transition-all"
             >
               {icon}
             </Link>

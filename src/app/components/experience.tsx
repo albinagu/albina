@@ -4,17 +4,17 @@ export default function Experience() {
       <h2 className="text-2xl font-semibold text-purple-300 mb-4">
         Experience
       </h2>
-      <div className="p-4 pt-0 rounded-md">
+      <div className="mb-4">
         <h3 className="font-bold">
           Web Developer <br />- Kosmos & Kaos / Júní
         </h3>
-        <p className="text-sm text-gray-500">February 2019 - Present</p>
+        <p className="text-sm text-gray-400">February 2019 - Present</p>
       </div>
-      <div className="p-4 pt-0 pb-0 rounded-md">
+      <div>
         <h3 className="font-bold">
           Software Developer <br />- Novomatic Lottery Solutions
         </h3>
-        <p className="text-sm text-gray-500">May 2017 - Jan 2019</p>
+        <p className="text-sm text-gray-400">May 2017 - Jan 2019</p>
       </div>
     </section>
   )

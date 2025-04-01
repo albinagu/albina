@@ -14,7 +14,7 @@ import ThemeToggle from "./components/themeToggle"
 
 export default function Home() {
   return (
-    <div className="bg-gray-50 light:text-black dark:bg-black dark:text-white">
+    <div className="bg-purple-50 light:text-black dark:bg-black dark:text-white">
       <motion.div
         initial={{ opacity: 0, y: -150 }}
         animate={{ opacity: 1, y: 0 }}

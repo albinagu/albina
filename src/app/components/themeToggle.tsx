@@ -25,7 +25,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={toggleTheme}
-      className="p-2 rounded-full border dark:border-gray-500"
+      className="p-2 rounded-full border"
     >
       {theme === "light" ? (
         <BsMoonFill className="w-4 h-4 text-yellow-500 dark:text-yellow-200" />

@@ -1,7 +1,7 @@
 export default function Languages() {
   return (
     <section>
-      <h2 className="text-2xl font-semibold text-purple-500 dark:text-purple-300 mb-4">
+      <h2 className="text-2xl font-semibold text-purple-700 dark:text-purple-300 mb-4">
         Languages
       </h2>
       <div className="mb-4">

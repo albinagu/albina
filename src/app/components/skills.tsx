@@ -4,7 +4,7 @@ import { FaRegLightbulb } from "react-icons/fa"
 export default function Skills() {
   return (
     <section>
-      <h2 className="text-2xl font-semibold text-purple-500 dark:text-purple-300 mb-4">
+      <h2 className="text-2xl font-semibold text-purple-700 dark:text-purple-300 mb-4">
         Main skills
       </h2>
       <ul className="grid sm:grid-cols-3 grid-cols-2 sm:text-lg">

@@ -13,7 +13,7 @@ export default function Projects() {
   return (
     <section className="flex flex-col sm:gap-30 gap-15 sm:mt-0 mt-15">
       <div>
-        <h2 className="text-2xl font-semibold text-purple-500 dark:text-purple-300">
+        <h2 className="text-2xl font-semibold text-purple-700 dark:text-purple-300">
           Recent projects
         </h2>
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">
@@ -24,7 +24,7 @@ export default function Projects() {
           {projects.slice(0, 6).map((project, index) => (
             <div key={index} className="border-1 rounded-xl p-5">
               <div className="flex justify-between">
-                <div className="text-4xl text-purple-500 dark:text-purple-300 font-semibold">
+                <div className="text-3xl text-purple-700 dark:text-purple-300 font-semibold">
                   {index + 1}
                 </div>
 
@@ -47,7 +47,7 @@ export default function Projects() {
               {projects.slice(6).map((project, index) => (
                 <div key={6 + index} className="border-1 rounded-lg p-5">
                   <div className="flex justify-between">
-                    <div className="text-4xl text-purple-500 dark:text-purple-300 font-semibold">
+                    <div className="text-3xl text-purple-700 dark:text-purple-300 font-semibold">
                       {6 + index + 1}
                     </div>
 
@@ -62,14 +62,14 @@ export default function Projects() {
         <div className="flex justify-center">
           <button
             onClick={handleToggle}
-            className="sm:mt-10 mt-5 text-purple-500 dark:text-purple-300 hover:text-purple-400 transition-colors"
+            className="sm:mt-10 mt-5 text-purple-700 dark:text-purple-300 hover:text-purple-400 transition-colors"
           >
             {showAll ? "See less" : "See more"}
           </button>
         </div>
       </div>
       <div>
-        <h2 className="text-2xl font-semibold text-purple-500 dark:text-purple-300">
+        <h2 className="text-2xl font-semibold text-purple-700 dark:text-purple-300">
           Other projects
         </h2>
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">

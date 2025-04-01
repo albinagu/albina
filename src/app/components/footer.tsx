@@ -19,16 +19,16 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 text-white py-5 mt-15">
+    <footer className="bg-gray-900 py-5 mt-15">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <h2 className="font-semibold text-purple-300">Let&apos;s connect!</h2>
+        <h2 className="font-semibold text-purple-500 dark:text-purple-300">Let&apos;s connect!</h2>
         <div className="flex justify-between items-center">
           {icons.map(({ icon, url }, index) => (
             <Link
               key={index}
               href={url}
               target="_blank"
-              className="mr-3 p-2 rounded-full text-purple-300 border-1 hover:bg-gray-200 hover:text-purple-400 transition-all"
+              className="mr-3 p-2 rounded-full text-purple-500 dark:text-purple-300 border-1 hover:bg-gray-200 hover:text-purple-400 transition-all"
             >
               {icon}
             </Link>

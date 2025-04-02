@@ -19,7 +19,7 @@ export default function Footer() {
   ]
 
   return (
-    <footer className="bg-gray-900 py-5 sm:mt-30 sm-15">
+    <footer className="bg-gray-900 py-5 sm:mt-30 mt-15">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <h2 className="font-semibold text-white dark:text-purple-300">Let&apos;s connect!</h2>
         <div className="flex justify-between items-center">

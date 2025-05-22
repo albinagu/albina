@@ -31,7 +31,7 @@ export default function Gallery() {
           show: {
             opacity: 1,
             transition: {
-              staggerChildren: 0.3,
+              staggerChildren: 0.2,
             },
           },
         }}
@@ -47,7 +47,7 @@ export default function Gallery() {
                   y: 0,
                 },
               }}
-              className="border border-gray-400 rounded-lg overflow-hidden"
+              className="border border-gray-400/50 rounded-lg overflow-hidden"
             >
               <Image
                 src={photo}

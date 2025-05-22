@@ -1,4 +1,4 @@
-import { skills } from "../utils"
+import { skills } from "../data"
 import { FaRegLightbulb } from "react-icons/fa"
 
 export default function Skills() {

@@ -9,7 +9,7 @@ import {
 } from "react-icons/md"
 import { FaCode, FaUserAlt, FaCalendarAlt } from "react-icons/fa"
 import Image from "next/image"
-import phone from "../assets/projects/phone.svg"
+import island from "../assets/projects/island.svg"
 
 type Project = {
   name: string
@@ -143,7 +143,7 @@ export default function Projects() {
                 </div>
                 <div className="flex-shrink-0 self-center sm:self-start sm:ml-4">
                   <Image
-                    src={phone}
+                    src={island}
                     alt={project.name}
                     width={90}
                     height={90}

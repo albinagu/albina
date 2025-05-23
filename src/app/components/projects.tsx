@@ -109,7 +109,7 @@ export default function Projects() {
     return (
       <AnimatePresence>
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center"
+          className="fixed inset-0 z-50 flex items-start sm:items-center justify-center pt-10 sm:pt-0"
           initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
           animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
           exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
@@ -117,46 +117,47 @@ export default function Projects() {
         >
           <motion.div
             ref={modalRef}
-            className="bg-white/90 dark:bg-black dark:border-gray-400/50 backdrop-blur-lg rounded-xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-xl border border-white/20"
+            className="bg-white/90 dark:bg-black dark:border-gray-400/50 backdrop-blur-lg rounded-xl max-w-3xl w-[95%] sm:w-full max-h-[85vh] mt-4 sm:mt-0 overflow-y-auto shadow-xl border border-white/20"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ type: "spring", damping: 25, stiffness: 300 }}
           >
-            <div className="p-10 pb-15 relative">
+            <div className="p-5 sm:p-10 pb-10 sm:pb-15 relative">
               <button
                 onClick={() => toggleProjectModal(null)}
-                className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 p-1 bg-gray-100/50 dark:bg-gray-800/50 rounded-full"
                 aria-label="Close modal"
               >
                 <MdClose size={25} />
               </button>
 
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
                 <div className="flex-grow">
-                  <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100">
+                  <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100">
                     {project.name}
                   </h2>
-                  <p className="text-gray-500 dark:text-gray-400">
+                  <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base">
                     {project.shortDesc}
                   </p>
                 </div>
-                <div className="flex-shrink-0 ml-4">
+                <div className="flex-shrink-0 self-center sm:self-start sm:ml-4">
                   <Image
                     src={phone}
                     alt={project.name}
-                    width={120}
-                    height={120}
+                    width={90}
+                    height={90}
+                    className="sm:w-[120px] sm:h-[120px] w-[90px] h-[90px]"
                   />
                 </div>
               </div>
 
               <div className="space-y-6">
-                <div className="bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg p-5 text-gray-700 dark:text-gray-300 shadow-sm border border-white/20 dark:border-gray-700/30">
-                  {project.description}
+                <div className="bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 sm:p-5 text-gray-700 dark:text-gray-300 shadow-sm border border-white/20 dark:border-gray-700/30">
+                  <p className="text-sm sm:text-base">{project.description}</p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="bg-white/30 dark:bg-gray-700/30 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-white/20 dark:border-gray-700/20">
                     <div className="flex items-center gap-2 mb-2">
                       <FaUserAlt className="text-purple-600 dark:text-purple-400" />

@@ -28,7 +28,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "Drivers License Applications",
     shortDesc: "Various applications for drivers license",
@@ -39,7 +38,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "Application for Passport",
     shortDesc: "Digital application for passport services",
@@ -50,7 +48,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "Marriage Application",
     shortDesc: "Application for marriage registration",
@@ -61,7 +58,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "Estate Settlement Application",
     shortDesc: "Digital solution for estate processing",
@@ -72,7 +68,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "Inheritance Financial Statement",
     shortDesc: "Application for Inheritance financial statement",
@@ -83,7 +78,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "P-card Application",
     shortDesc: "Digital application for P-cards",
@@ -93,7 +87,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "General Petitions System",
     shortDesc: "Platform for collecting signatures",
@@ -104,7 +97,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "Óskalisti Þjóðarinnar",
     shortDesc: "Nation's wishlist platform for Digital Iceland",
@@ -115,7 +107,6 @@ export const projects = [
     year: "TBD",
     link: "#",
   },
-
   {
     name: "Digital Iceland Frontpage",
     shortDesc: "Life Events section",

@@ -132,7 +132,7 @@ export default function Projects() {
                 <MdClose size={25} />
               </button>
 
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6 gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-5 gap-4 mt-8 sm:mt-0">
                 <div className="flex-grow">
                   <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100">
                     {project.name}
@@ -152,13 +152,13 @@ export default function Projects() {
                 </div>
               </div>
 
-              <div className="space-y-6">
+              <div className="space-y-4">
                 <div className="bg-white/40 dark:bg-gray-800/40 backdrop-blur-sm rounded-lg p-4 sm:p-5 text-gray-700 dark:text-gray-300 shadow-sm border border-white/20 dark:border-gray-700/30">
                   <p className="text-sm sm:text-base">{project.description}</p>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div className="bg-white/30 dark:bg-gray-700/30 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-white/20 dark:border-gray-700/20">
+                <div className="flex flex-wrap gap-3">
+                  <div className="flex-1 min-w-[160px] bg-white/30 dark:bg-gray-700/30 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-white/20 dark:border-gray-700/20">
                     <div className="flex items-center gap-2 mb-2">
                       <FaUserAlt className="text-purple-600 dark:text-purple-400" />
                       <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -170,7 +170,7 @@ export default function Projects() {
                     </p>
                   </div>
 
-                  <div className="bg-white/30 dark:bg-gray-700/30 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-white/20 dark:border-gray-700/20">
+                  <div className="flex-1 min-w-[160px] bg-white/30 dark:bg-gray-700/30 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-white/20 dark:border-gray-700/20">
                     <div className="flex items-center gap-2 mb-2">
                       <FaCalendarAlt className="text-purple-600 dark:text-purple-400" />
                       <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">
@@ -223,7 +223,7 @@ export default function Projects() {
         </p>
         <motion.div
           layout
-          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7"
+          className="grid grid-cols-2 xl:grid-cols-3 gap-7"
         >
           {/* initial 6 items */}
           {projects.slice(0, 6).map((project, index) => (

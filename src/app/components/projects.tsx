@@ -133,7 +133,7 @@ export default function Projects() {
                 <MdClose size={25} />
               </button>
 
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-5 gap-4 mt-8 sm:mt-0">
+              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-5 gap-4 mt-6 sm:mt-0">
                 <div className="flex-grow">
                   <h2 className="text-xl sm:text-2xl font-bold text-gray-800 dark:text-gray-100">
                     {project.name}

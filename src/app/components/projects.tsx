@@ -221,10 +221,7 @@ export default function Projects() {
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">
           Digital Iceland
         </p>
-        <motion.div
-          layout
-          className="grid grid-cols-2 xl:grid-cols-3 gap-7"
-        >
+        <motion.div layout className="grid grid-cols-2 xl:grid-cols-3 gap-7">
           {/* initial 6 items */}
           {projects.slice(0, 6).map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />

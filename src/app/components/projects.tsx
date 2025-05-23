@@ -236,7 +236,7 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-7 pt-5"
+              className="grid grid-cols-2 xl:grid-cols-3 gap-7 pt-5"
             >
               {projects.slice(6).map((project, index) => (
                 <ProjectCard

@@ -7,7 +7,7 @@ import {
   MdExpandLess,
   MdClose,
 } from "react-icons/md"
-import { FaCode, FaUserAlt, FaCalendarAlt } from "react-icons/fa"
+import { BsCode, BsPerson, BsCalendar } from "react-icons/bs"
 import Image from "next/image"
 import island from "../assets/projects/island.svg"
 
@@ -109,11 +109,12 @@ export default function Projects() {
     return (
       <AnimatePresence>
         <motion.div
-          className="fixed inset-0 z-50 flex items-start sm:items-center justify-center pt-10 sm:pt-0"
+          className="fixed inset-0 z-50 flex items-start sm:items-center justify-center pt-10 sm:pt-0 touch-none"
           initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
           animate={{ opacity: 1, backdropFilter: "blur(8px)" }}
           exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
           transition={{ duration: 0.3 }}
+          onClick={(e) => e.stopPropagation()}
         >
           <motion.div
             ref={modalRef}
@@ -160,7 +161,7 @@ export default function Projects() {
                 <div className="flex flex-wrap gap-3">
                   <div className="flex-1 min-w-[160px] bg-white/30 dark:bg-gray-700/30 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-white/20 dark:border-gray-700/20">
                     <div className="flex items-center gap-2 mb-2">
-                      <FaUserAlt className="text-purple-600 dark:text-purple-400" />
+                      <BsPerson className="text-purple-600 dark:text-purple-400" />
                       <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         Role
                       </h3>
@@ -172,7 +173,7 @@ export default function Projects() {
 
                   <div className="flex-1 min-w-[160px] bg-white/30 dark:bg-gray-700/30 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-white/20 dark:border-gray-700/20">
                     <div className="flex items-center gap-2 mb-2">
-                      <FaCalendarAlt className="text-purple-600 dark:text-purple-400" />
+                      <BsCalendar className="text-purple-600 dark:text-purple-400" />
                       <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">
                         Year
                       </h3>
@@ -185,7 +186,7 @@ export default function Projects() {
 
                 <div className="bg-white/30 dark:bg-gray-700/30 backdrop-blur-sm p-4 rounded-lg shadow-sm border border-white/20 dark:border-gray-700/20">
                   <div className="flex items-center gap-2 mb-3">
-                    <FaCode className="text-purple-600 dark:text-purple-400" />
+                    <BsCode className="text-purple-600 dark:text-purple-400" />
                     <h3 className="text-sm font-medium text-gray-700 dark:text-gray-300">
                       Technologies
                     </h3>

@@ -221,7 +221,7 @@ export default function Projects() {
         <p className="text-sm text-gray-500 dark:text-gray-400 mb-5">
           Digital Iceland
         </p>
-        <motion.div layout className="grid grid-cols-2 xl:grid-cols-3 gap-7">
+        <motion.div layout className="grid grid-cols-2 xl:grid-cols-3 gap-5">
           {/* initial 6 items */}
           {projects.slice(0, 6).map((project, index) => (
             <ProjectCard key={index} project={project} index={index} />
@@ -236,7 +236,7 @@ export default function Projects() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.5 }}
-              className="grid grid-cols-2 xl:grid-cols-3 gap-7 pt-5"
+              className="grid grid-cols-2 xl:grid-cols-3 gap-5 pt-5"
             >
               {projects.slice(6).map((project, index) => (
                 <ProjectCard

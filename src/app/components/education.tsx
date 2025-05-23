@@ -8,7 +8,7 @@ export default function Education() {
         </h3>
         <p className="text-sm text-gray-500 dark:text-gray-400">2014 - 2017</p>
       </div>
-      <div className="mb-4">
+      <div>
         <h3 className="font-bold">
           International Baccalaureate, <br />Menntaskólinn við Hamrahlíð
         </h3>

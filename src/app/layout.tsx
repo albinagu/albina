@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Space_Grotesk } from "next/font/google"
+import Script from "next/script"
 import "./globals.css"
 
 const grotesk = Space_Grotesk({
@@ -30,6 +31,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          id="plausible-analytics"
+          defer
+          data-domain="bina.is"
+          src="https://plausible.io/js/script.js"
+        />
+      </head>
       <body
         className={`${grotesk.variable} antialiased bg-white dark:bg-black min-h-screen`}
       >

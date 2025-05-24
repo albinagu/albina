@@ -9,11 +9,15 @@ const grotesk = Space_Grotesk({
 })
 
 export const metadata: Metadata = {
-  title: "Albina",
-  description: "",
+  title: "Albina | Web Developer",
+  description: "Portfolio page",
+  metadataBase: new URL("https://bina.is"),
   openGraph: {
-    title: "Albina",
-    description: "Web developer's portfolio page",
+    type: "website",
+    locale: "en_US",
+    url: "https://bina.is",
+    title: "Albina | Web Developer",
+    siteName: "My portfolio page",
     images: [
       {
         url: "https://bina.is/assets/personal/photo3.png",

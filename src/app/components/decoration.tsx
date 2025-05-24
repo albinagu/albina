@@ -21,7 +21,7 @@ export default function Decoration() {
             stopColor: ["#3C2570", "#A78BFA"],
           }}
           transition={{
-            duration: 15,
+            duration: 8,
             repeat: Infinity,
             ease: "easeInOut",
           }}

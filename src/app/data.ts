@@ -1,7 +1,7 @@
 export const technologies = [
   "React",
   "TypeScript",
-  "Node.js",
+  "Next.js",
   "GraphQL",
   "Contentful",
   "Figma",

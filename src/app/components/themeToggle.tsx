@@ -39,7 +39,7 @@ export default function ThemeToggle() {
         {theme === "light" ? (
           <BsMoonFill className="w-5 h-5 text-purple-600 dark:text-purple-300" />
         ) : (
-          <BsSunFill className="w-5 h-5 text-yellow-500 dark:text-yellow-300" />
+          <BsSunFill className="w-5 h-5 text-yellow-500 dark:text-yellow-200" />
         )}
       </div>
     </button>

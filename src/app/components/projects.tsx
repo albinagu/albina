@@ -88,7 +88,7 @@ export default function Projects() {
         style={{ cursor: "pointer" }}
         whileHover={{ y: -5, transition: { duration: 0.1 } }}
       >
-        <div className="text-3xl text-purple-700 dark:text-purple-300 font-semibold mb-5">
+        <div className="text-4xl text-purple-700 dark:text-purple-300 font-semibold mb-5">
           {index + 1}
         </div>
 
@@ -252,7 +252,7 @@ export default function Projects() {
         <div className="flex justify-center">
           <button
             onClick={toggleSeeMore}
-            className="sm:mt-10 mt-5 text-purple-700 dark:text-purple-300 hover:text-purple-400 transition-colors cursor-pointer flex items-center gap-1"
+            className="mt-5 text-purple-700 dark:text-purple-300 hover:text-purple-400 transition-colors cursor-pointer flex items-center gap-1"
           >
             {showAll ? (
               <>
